@@ -12,4 +12,10 @@ describe('Manager subclass', () => {
     it("creates new employee object", () => {
         expect(typeof janeDoe).toEqual(`object`);
     })
+    // if intern already exists
+    describe('JaneDoe Intern already exist', () => {
+        it('confirms that JaneDoe is an instance of manager subclass', () => {
+            expect(janeDoe).toBeDefined();
+        })
+    })
 })

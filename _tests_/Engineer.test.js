@@ -9,7 +9,7 @@ describe('Engineer subclass', () => {
     var email = `JaneDoe@gmail.com`;
     var gitUsername = `JDcode9`;
     janeDoe = new neer.Engineer(name, id, email, gitUsername);
-    it("creates new employee object", () => {
+    it("creates new engineer object", () => {
         expect(typeof janeDoe).toEqual(`object`);
     })
     // if engineer with same name exist
@@ -20,19 +20,19 @@ describe('Engineer subclass', () => {
     })
      // get name test
      describe('function getName', ()=> {
-        it("returns name of employee object", () => {
+        it("returns name of engineer object", () => {
             expect(janeDoe.getName()).toEqual("this is jane doe")
         })
     })
     // getId test
     describe('function getId', ()=> {
-        it("returns Id of employee", () => {
+        it("returns Id of engineer", () => {
             expect(janeDoe.getId()).toEqual("my id is 9")
         })
     })
     // getEmail test
     describe('function getEmail', () => {
-        it("returns employees email", () => {
+        it("returns engineers email", () => {
             expect(janeDoe.getEmail()).toEqual("my email is JaneDoe@gmail.com")
         })
     })
@@ -44,8 +44,8 @@ describe('Engineer subclass', () => {
     })
     // getRole funciton test
     describe('function getRole', () => {
-        it("returns employee role", () => {
-            expect(janeDoe.getRole()).toEqual("my role is employee")
+        it("returns engineer role", () => {
+            expect(janeDoe.getRole()).toEqual("my role is engineer")
         })
     })
 })
