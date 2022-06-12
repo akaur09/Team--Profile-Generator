@@ -8,10 +8,10 @@ var EmployeeRank = require('./employee');
 // create manager class to extend employee
 class Manager extends EmployeeRank {
     // create constructor
-    constructor(name, id, email){
+    constructor(name, id, email, officeNumber){
         super(name, email, id);
         // add office number
-        this.officeNumber = "officeNumber";
+        this.officeNumber = officeNumber;
         // add role
         this.role = "Manager";
     }

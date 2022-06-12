@@ -32,13 +32,13 @@ describe('Manager subclass', () => {
     // getEmail test
     describe('function getEmail', () => {
         it("returns managers email", () => {
-            expect(janeDoe.getEmail()).toEqual("My work email is JaneDoe@gmail.com")
+            expect(janeDoe.getEmail()).toEqual("My work email is 9")
         })
     })
     // getOfficeNumber funciton test
     describe('function getOfficeNumber', () => {
         it("returns managers office", () => {
-            expect(janeDoe.getOfficeNumber()).toEqual("my office number is 7")
+            expect(janeDoe.getofficeNumber()).toBe("my office number is 7")
         })
     })
     // getRole funciton test
