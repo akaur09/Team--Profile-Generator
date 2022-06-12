@@ -86,3 +86,20 @@ function inquireManager(){
         return ManagerHTML(newManager);
     })
 }
+// create manager html
+function ManagerHTML(data){
+    var managerString = `
+    <div>
+        <div> ${data.role} </div>
+        <div>
+            <h4> ${data.name} </h4>
+            <p> ${data.id} </p>
+            <p> Email: <a href = "mailto:${data.email}"> ${data.email} </a></p>
+            <p> Office: ${data.officeNumber} </p>
+        </div>
+    </div>
+    `
+    return managerString;
+}
+
+module.exports = {inquireManager, Manager};
