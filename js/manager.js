@@ -81,5 +81,8 @@ function inquireManager(){
                 }
             }
         }
-    ])
+    ]).then(answers => {
+        const newManager = new Manager(answers.inputName, answers.inputId, answers.inputEmail, answers.inputOfficeNumber);
+        return ManagerHTML(newManager);
+    })
 }
