@@ -11,7 +11,7 @@ class Manager extends EmployeeRank {
     constructor(name, id, email){
         super(name, email, id);
         // add office number
-        this.officeNumber = officeNumber;
+        this.officeNumber = "officeNumber";
         // add role
         this.role = "Manager";
     }
