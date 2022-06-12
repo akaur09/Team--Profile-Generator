@@ -53,6 +53,19 @@ function inquireIntern (){
                     return false;
                 }
             }
+        },
+        {
+            // input email
+            type: "input",
+            message: "Enter",
+            validate: (inputvalue) => {
+                if (inputvalue) {
+                    return true;
+                } else {
+                    console.log("Please enter a vaild email: ");
+                    return false;
+                }
+            }
         }
     ])
 }
