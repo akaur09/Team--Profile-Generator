@@ -38,7 +38,7 @@ function inquireEngineer () {
                 if (inputvalue) {
                     return true;
                 } else {
-                    console.log("Please enter a vaild name");
+                    console.log("Please enter a vaild name: ");
                     return false;
                 }
             }
@@ -53,7 +53,7 @@ function inquireEngineer () {
                 if (inputvalue) {
                     return true;
                 } else {
-                    console.log("Please enter a vaild id");
+                    console.log("Please enter a vaild id: ");
                     return false;
                 }
             }
@@ -68,10 +68,26 @@ function inquireEngineer () {
                 if (inputvalue) {
                     return true;
                 } else {
-                    console.log("Please enter a vaild email");
+                    console.log("Please enter a vaild email: ");
                     return false;
                 }
             }
         },
+        {
+            // create form for github 
+            type:"input",
+            message: "enter ENGINEER's github username: ",
+            name: "inputGithub",
+            // validate answer
+            validate: (inputvalue) => {
+                if (inputvalue) {
+                    return true;
+                } else {
+                    console.log("Please enter a vaild username: ");
+                    return false;
+                }
+            }
+        }
+        // add engineer
     ])
 }
