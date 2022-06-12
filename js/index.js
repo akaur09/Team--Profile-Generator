@@ -11,3 +11,11 @@ const engineerjs = require('./engineer');
 const path = require('path');
 // call on html string
 var htmlString = '';
+
+function Projection(){
+    // call on manager inquirer
+    managerjs.inquireManager().then((managerString)=> {
+        htmlString = htmlString + managerString;
+        addOrNot();
+    });
+}
