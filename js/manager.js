@@ -22,3 +22,22 @@ class Manager extends EmployeeRank {
         return ` my role is ${this.role}`;
     }
 }
+// create function to input mahanger info
+function inquireManager(){
+    return inquirer.prompt([
+        {
+            // create name
+            type: "input",
+            message: "enter MANAGER name: ",
+            name: "inputName",
+            validate: (inputvalue) => {
+                if (inputvalue) {
+                    return true;
+                } else {
+                    console.log("Please enter a vaild name: ");
+                    return false;
+                }
+            }
+        }
+    ])
+}

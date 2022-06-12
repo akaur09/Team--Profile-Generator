@@ -58,7 +58,7 @@ function inquireIntern (){
         {
             // input email
             type: "input",
-            message: "Enter",
+            message: "Enter INTERN email",
             name: "inputEmail",
             validate: (inputvalue) => {
                 if (inputvalue) {
