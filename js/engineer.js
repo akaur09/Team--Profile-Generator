@@ -23,3 +23,26 @@ class Engineer extends EmployeeRank {
         return `My role is ${this.role}`;
     }
 }
+
+// create a function to input engineer
+function inquireEngineer () {
+    // create prompt using inquier
+    return inquirer.prompt([
+        {
+            // create form to add engineer's name
+            type: "input",
+            message: "input ENGINEER'S name: ",
+            name: "inputName",
+            // validate answer
+            validate: (inputvalue) => {
+                if (inputvalue) {
+                    return true;
+                } else {
+                    console.log("Please enter a vaild name");
+                    return false;
+                }
+            }
+        },
+        
+    ])
+}
