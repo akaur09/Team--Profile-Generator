@@ -15,4 +15,10 @@ class Manager extends EmployeeRank {
         // add role
         this.role = "Manager";
     }
+    getofficeNumber(){
+        return `my office number is ${this.officeNumber}`;
+    }
+    getRole(){
+        return ` my role is ${this.role}`;
+    }
 }
