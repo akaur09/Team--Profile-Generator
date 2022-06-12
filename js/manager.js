@@ -38,6 +38,20 @@ function inquireManager(){
                     return false;
                 }
             }
+        },
+        {
+            // create id
+            type: "input",
+            message: "Enter MANAGER Id: ",
+            name: "inputId",
+            validate: (inputvalue) => {
+                if (inputvalue) {
+                    return true;
+                } else {
+                    console.log("Please enter a vaild id: ");
+                    return false;
+                }
+            }
         }
     ])
 }
