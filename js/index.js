@@ -37,3 +37,26 @@ function addOrNot(){
         }
     })
 }
+// create a function to add a new intern or engineer
+function addEmployee(){
+    inquirer.prompt([
+        {
+            type:"list",
+            message:"Do you want to add an intern or an engineer?",
+            name:"EI",
+            choices:["Add Intern", "Add Engineer"],
+        },
+    ]).then((answer)=>{
+        if (answer.EI == "Add Intern") {
+            internjs.inquireIntern().then((internString) => { 
+                htmlString = htmlString + internString;
+                addOrNot();
+            });
+        } else if(answer.EI == "Add Engineer") {
+            engineerjs.inquireEngineer().then((engineerString) =>{
+                htmlString = htmlString + engineerString;
+                addOrNot();
+            });
+        }
+    });
+}
