@@ -13,7 +13,7 @@ class Intern extends EmployeeRank {
         // add school
         this.school = school;
         // add role
-        this.role = "Intern"
+        this.role = "Intern";
     }
     // create funciton for school
     getSchool () {

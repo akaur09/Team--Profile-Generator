@@ -1,5 +1,5 @@
 // require intern js
-const int = require('../js/intern');
+const intern = require('../js/intern');
 
 // begin describeing as a mangaer subclass
 describe('Intern subclass', () => {
@@ -8,7 +8,7 @@ describe('Intern subclass', () => {
     var id = 9;
     var email = `JaneDoe@gmail.com`;
     var school = `ASU`;
-    janeDoe = new int.Intern(name, id, email, school);
+    janeDoe = new intern.Intern (name, id, email, school);
     it("creates new intern object", () => {
         expect(typeof janeDoe).toEqual(`object`);
     })
