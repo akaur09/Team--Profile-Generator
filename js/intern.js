@@ -45,6 +45,7 @@ function inquireIntern (){
             // input id
             type:"input",
             message: "enter INTERN Id: ",
+            name: "inputId",
             validate: (inputvalue) => {
                 if (inputvalue) {
                     return true;
@@ -58,11 +59,26 @@ function inquireIntern (){
             // input email
             type: "input",
             message: "Enter",
+            name: "inputEmail",
             validate: (inputvalue) => {
                 if (inputvalue) {
                     return true;
                 } else {
                     console.log("Please enter a vaild email: ");
+                    return false;
+                }
+            }
+        },
+        {
+            // input school
+            type: "input",
+            message: "Enter INTERN's school name",
+            name: "inputSchool",
+            validate: (inputvalue) => {
+                if (inputvalue) {
+                    return true;
+                } else {
+                    console.log("Please enter a vaild school: ");
                     return false;
                 }
             }
