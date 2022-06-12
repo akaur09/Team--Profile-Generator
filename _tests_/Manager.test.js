@@ -36,7 +36,7 @@ describe('Manager subclass', () => {
         })
     })
     // getOfficeNumber funciton test
-    describe('function getOffice', () => {
+    describe('function getOfficeNumber', () => {
         it("returns managers office", () => {
             expect(janeDoe.getOfficeNumber()).toEqual("my office # is 7")
         })
