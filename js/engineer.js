@@ -14,4 +14,12 @@ class Engineer extends EmployeeRank {
         // create role
         this.role = "Engineer";
     }
+    // create function to get github
+    getGithub(){
+        return ` My github username is ${this.gitUsername}`;
+    }
+    // create function for role
+    getRole (){
+        return `My role is ${this.role}`;
+    }
 }
