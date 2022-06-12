@@ -19,3 +19,21 @@ function Projection(){
         addOrNot();
     });
 }
+// create a function if new members need to be added
+function addOrNot(){
+    inquirer.prompt([
+        {
+            type:"list",
+            message: "Will you like to add another employee?",
+            name: "YN",
+            choices:["Yes", "No"],
+        },
+    ]).then((answer) => {
+        if (answer.YN == "Yes") {
+            addEmployee();
+        } else {
+            compileHtml();
+            compileCss();
+        }
+    })
+}
