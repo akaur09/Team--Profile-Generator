@@ -83,5 +83,8 @@ function inquireIntern (){
                 }
             }
         }
-    ])
+    ]).then(answers => {
+        const newIntern = new Intern(answers.inputName, answers.inputId, answers.inputEmail, answers.inputSchool);
+        return InternHTML(newIntern);
+    })
 }
