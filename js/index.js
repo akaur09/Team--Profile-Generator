@@ -9,13 +9,13 @@ const internjs = require('./intern');
 const engineerjs = require('./engineer');
 // require path
 const path = require('path');
-// call on html string
-var htmlString = '';
+// call on HTML string
+var HTMLString = '';
 
 function Projection(){
     // call on manager inquirer
     managerjs.inquireManager().then((managerString)=> {
-        htmlString = htmlString + managerString;
+        HTMLString = HTMLString + managerString;
         addOrNot();
     });
 }
@@ -32,7 +32,7 @@ function addOrNot(){
         if (answer.YN == "Yes") {
             addEmployee();
         } else {
-            compileHtml();
+            compileHTML();
             compileCss();
         }
     })
@@ -49,14 +49,18 @@ function addEmployee(){
     ]).then((answer)=>{
         if (answer.EI == "Add Intern") {
             internjs.inquireIntern().then((internString) => { 
-                htmlString = htmlString + internString;
+                HTMLString = HTMLString + internString;
                 addOrNot();
             });
         } else if(answer.EI == "Add Engineer") {
             engineerjs.inquireEngineer().then((engineerString) =>{
-                htmlString = htmlString + engineerString;
+                HTMLString = HTMLString + engineerString;
                 addOrNot();
             });
         }
     });
+}
+// create an HTML with the complied HTMLs
+function compileHTML() {
+    var fullString = ``
 }
