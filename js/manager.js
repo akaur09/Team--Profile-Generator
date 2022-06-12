@@ -52,6 +52,20 @@ function inquireManager(){
                     return false;
                 }
             }
-        }
+        },
+        {
+            // create email
+            type: "input",
+            message: "Enter MANAGER's email: ",
+            name: "inputEmail",
+            validate: (inputvalue) => {
+                if (inputvalue) {
+                    return true;
+                } else {
+                    console.log("Please enter a vaild email: ");
+                    return false;
+                }
+            }
+        },
     ])
 }
