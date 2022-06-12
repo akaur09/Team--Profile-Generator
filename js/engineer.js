@@ -89,5 +89,8 @@ function inquireEngineer () {
             }
         }
         // add engineer
-    ])
+    ]) .then(answers => {
+        const newEngineer = new Engineer(answers.inputName, answers.inputId, answers.inputEmail, answers.inputGihub);
+        return EngineerHTML(newEngineer);
+    })
 }
