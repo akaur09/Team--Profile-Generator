@@ -8,6 +8,9 @@ Jest
 Npm install
 ## Usage:
 ![Alt img](./imgage.png)
+
+![Alt img](./demo.gif)
+video link: https://drive.google.com/file/d/1bvI5YpyGARkkz2Jln7cTG6egirQB4Lox/view?usp=sharing 
 ## Creditor:
 Amnider Kaur (github: https://github.com/akaur09)
 
