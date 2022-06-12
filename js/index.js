@@ -88,4 +88,9 @@ function compileHTML() {
     </body>
     </html>
     `;
+    fs.writeFileSync(path.join(process.cwd(), '../index.html'), fullString);
+}
+// create function to stlye HTML
+function compileCss(){
+    var CSSstring = ``
 }
