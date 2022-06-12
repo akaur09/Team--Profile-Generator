@@ -67,5 +67,19 @@ function inquireManager(){
                 }
             }
         },
+        {
+            // create office number
+            type:"input",
+            message: "Enter MANAGER's office number",
+            name: "inputOfficeNumber",
+            validate: (inputvalue) => {
+                if (inputvalue) {
+                    return true;
+                } else {
+                    console.log("Please enter a vaild office number: ");
+                    return false;
+                }
+            }
+        }
     ])
 }
