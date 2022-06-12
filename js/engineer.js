@@ -43,6 +43,20 @@ function inquireEngineer () {
                 }
             }
         },
-        
+        {
+            // create form for id
+            type: "input",
+            message: "enter ENGINEER'S Id",
+            name: "inputId",
+            // validate answer
+            validate: (inputvalue) => {
+                if (inputvalue) {
+                    return true;
+                } else {
+                    console.log("Please enter a vaild id");
+                    return false;
+                }
+            }
+        }
     ])
 }
