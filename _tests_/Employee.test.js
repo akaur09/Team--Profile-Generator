@@ -28,7 +28,7 @@ describe('Employee', () => {
     // getId test
     describe('function getId', ()=> {
         it("returns Id of employee", () => {
-            expect(janeDoe.getId()).toEqual("My eployee ID is 9")
+            expect(janeDoe.getId()).toEqual("My employee ID is 9")
         })
     })
     // getEmail test
