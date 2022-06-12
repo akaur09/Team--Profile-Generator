@@ -57,6 +57,21 @@ function inquireEngineer () {
                     return false;
                 }
             }
-        }
+        },
+        {
+            // create form for email
+            type: "input",
+            message: "enter ENGINEER's email",
+            name: "inputEmail",
+            // validate answer
+            validate: (inputvalue) => {
+                if (inputvalue) {
+                    return true;
+                } else {
+                    console.log("Please enter a vaild email");
+                    return false;
+                }
+            }
+        },
     ])
 }
