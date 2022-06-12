@@ -1,5 +1,5 @@
 // require intern js
-const intern = require('../js/intern');
+const Intern = require('../js/intern');
 
 // begin describeing as a mangaer subclass
 describe('Intern subclass', () => {
@@ -8,7 +8,7 @@ describe('Intern subclass', () => {
     var id = 9;
     var email = `JaneDoe@gmail.com`;
     var school = `ASU`;
-    janeDoe = new intern.Intern (name, id, email, school);
+    janeDoe = new Intern (name, id, email, school);
     it("creates new intern object", () => {
         expect(typeof janeDoe).toEqual(`object`);
     })
@@ -21,31 +21,31 @@ describe('Intern subclass', () => {
      // get name test
      describe('function getName', ()=> {
         it("returns name of intern object", () => {
-            expect(janeDoe.getName()).toEqual("this is jane doe")
+            expect(janeDoe.getName()).toEqual("This is JaneDoe")
         })
     })
     // getId test
     describe('function getId', ()=> {
         it("returns Id of intern", () => {
-            expect(janeDoe.getId()).toEqual("my id is 9")
+            expect(janeDoe.getId()).toEqual("My employee ID is 9")
         })
     })
     // getEmail test
     describe('function getEmail', () => {
         it("returns interns email", () => {
-            expect(janeDoe.getEmail()).toEqual("my email is JaneDoe@gmail.com")
+            expect(janeDoe.getEmail()).toEqual("My work email is JaneDoe@gmail.com")
         })
     })
     // getSchool funciton test
     describe('function getSchool', () => {
         it("returns interns school", () => {
-            expect(janeDoe.getEmail()).toEqual("my school is ASU")
+            expect(janeDoe.getSchool()).toEqual("My school is ASU")
         })
     })
     // getRole funciton test
     describe('function getRole', () => {
         it("returns intern role", () => {
-            expect(janeDoe.getRole()).toEqual("my role is intern")
+            expect(janeDoe.getRole()).toEqual("My role is Intern")
         })
     })
 })
